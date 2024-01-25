@@ -124,20 +124,33 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./static/images/pipeline.png"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/"
-                type="video/mp4">
-      </video> -->
+      <img src="./static/images/inputs.jpg"
+                class="interpolation-image"
+                alt="input images"/>
+      <div class="video-row">
+        <video autoplay muted loop>
+          <source src="static/videos/croissant.mp4"
+          type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="static/videos/cupcake.mp4"
+          type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="static/videos/duck.mp4"
+          type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="static/videos/latern.mp4"
+          type="video/mp4">
+        </video>
+      </div>
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">SinLayout</span>: uncovering spatial layout distribution from a single image
       </h2>
     </div>
   </div>
 </section>
-
 
 
 <section class="section">
@@ -157,10 +170,14 @@
             Experiments demonstrate that our model successfully learns a wide range of layout distributions, each from a single Internet image. 
             Our method achieves superior results on multiple downstream tasks, including extrapolating on number of instances and transferring learned layout to other objects.
           </p>
+          <img src="./static/images/pipeline.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
+    <br><br>
 
     <!-- Paper video. -->
     <!-- <div class="columns is-centered has-text-centered">
@@ -187,8 +204,36 @@
                  class="interpolation-image"
                  alt="layout generation results"/>
         <p>Generations on a wide range of scene layouts</p>
-        <br><br><br>
-        
+        <br>
+      
+        <h2 class="subtitle has-text-centered">
+          <b>Camera Walk on Generated 3D Scenes</b>:
+        </h2>
+        <img src="./static/images/inputs.jpg"
+                 class="interpolation-image"
+                 alt="input images"/>
+        <div class="video-row">
+          <video autoplay muted loop>
+            <source src="static/videos/croissant.mp4"
+            type="video/mp4">
+          </video>
+          <video autoplay muted loop>
+            <source src="static/videos/cupcake.mp4"
+            type="video/mp4">
+          </video>
+          <video autoplay muted loop>
+            <source src="static/videos/duck.mp4"
+            type="video/mp4">
+          </video>
+          <video autoplay muted loop>
+            <source src="static/videos/latern.mp4"
+            type="video/mp4">
+          </video>
+
+        </div>
+        <p>The scene is generated after learning from the single image input.</p>
+        <br><br>
+
         <h2 class="subtitle has-text-centered">
           <b>Diverse layout interpolation</b>:
         </h2>      
@@ -197,7 +242,7 @@
                  width="75%"
                  alt="layout interpolation results"/>
         <p>Each image on the right is one generated sample</p>
-        <br><br><br>
+        <br><br>
 
         <h2 class="subtitle has-text-centered">
           <b>Reasonable layout extrapolation</b>:
@@ -207,7 +252,7 @@
                  width="75%"
                  alt="layout extrapolation results"/>
         <p>The image marked with * are input images; others are generated images extrapolating on the number of instances while maintaining the layout patterns</p>
-        <br><br><br>
+        <br><br>
 
         <h2 class="subtitle has-text-centered">
           <b>Layout transfer to different instances</b>:
@@ -217,7 +262,7 @@
                  width="75%"
                  alt="layout transfer results"/>
         <p>Transfering the layout learned from a circle of cars to the geometry of a tulip = a flower wreath</p>
-        <!-- <br><br><br> -->
+        <!-- <br><br> -->
 
       </div>
     </div>

@@ -1,14 +1,13 @@
-# Nerfies
+# SinLayout: Learning Generative 3D Scene Layouts from a Single Image
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository for the [SinLayout website](https://sinlayout.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find SinLayout useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@article{sinlayout2023,
+  author    = {Zhao, Linan and Yuan, Zeqing and Zhang, Yunzhi and Wu, Shangzhe and Wu, Jiajun},
+  title     = {Learning Generative 3D Scene Layouts from a Single Image},
+  year      = {2023},
 }
 ```
 
