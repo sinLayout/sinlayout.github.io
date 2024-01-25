@@ -160,8 +160,3 @@ body {
   display: flex;
   justify-content: space-around;
 }
-
-video {
-  width: 22%; /* Adjust the width as needed */
-  margin: 3px; /* Optional: for spacing between videos */
-}
