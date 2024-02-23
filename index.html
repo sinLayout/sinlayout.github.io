@@ -121,41 +121,42 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
       <p>Single input images:</p>
-      <img src="./static/images/inputs.jpg"
-                class="interpolation-image"
-                alt="input images"/>
+      <div class="video-row">
+        <img src="./static/images/croissants.jpg" width="24%" style="padding-left: 1%">
+        <img src="./static/images/cupcakes.jpg" width="24%" style="padding-left: 1%">
+        <img src="./static/images/ducks.jpg" width="24%" style="padding-left: 1%">
+        <img src="./static/images/lanterns.jpg" width="24%" style="padding-left: 1%">
+      </div>
+      
       <p>Learned 3D layouts:</p>
       <div class="video-row">
-        <video autoplay muted loop width="25%">
+        <video autoplay muted loop width="24%" style="padding-left: 1%">
           <source src="static/videos/croissant.mp4"
           type="video/mp4">
         </video>
-        <video autoplay muted loop width="25%">
+        <video autoplay muted loop width="24%" style="padding-left: 1%">
           <source src="static/videos/cupcake.mp4"
           type="video/mp4">
         </video>
-        <video autoplay muted loop width="25%">
+        <video autoplay muted loop width="24%" style="padding-left: 1%">
           <source src="static/videos/duck.mp4"
           type="video/mp4">
         </video>
-        <video autoplay muted loop width="25%">
-          <source src="static/videos/latern.mp4"
+        <video autoplay muted loop width="24%" style="padding-left: 1%">
+          <source src="static/videos/lantern.mp4"
           type="video/mp4">
         </video>
       </div>
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">SinLayout</span>: uncovering spatial layout distribution from a single image
       </h2>
-    </div>
   </div>
-</section>
+  
 
-
-<section class="section">
+  
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -199,57 +200,131 @@
         <h2 class="title is-3">Single-Image 3D Layout Generation</h2>
         <br>
         
-        <h2 class="subtitle has-text-centered">
-          <b>Faithful layout generation</b>:
+        <h2 class="title is-4">
+          <b>Faithful layout generation with variations</b>:
         </h2>
-        <img src="./static/images/working_cases_v3.png"
-                 class="interpolation-image"
-                 alt="layout generation results"/>
-        <p>Generations on a wide range of scene layouts</p>
-        <br>
-      
-        <h2 class="subtitle has-text-centered">
-          <b>Camera Walk on Generated 3D Scenes</b>:
-        </h2>
-        <p>Input images:</p>
-        <img src="./static/images/inputs.jpg"
-                  class="interpolation-image"
-                  alt="input images"/>
-        <p>Learned 3D layouts:</p>
-        <div class="video-row">
-          <video autoplay muted loop width="25%">
-            <source src="static/videos/croissant.mp4"
-            type="video/mp4">
-          </video>
-          <video autoplay muted loop width="25%">
-            <source src="static/videos/cupcake.mp4"
-            type="video/mp4">
-          </video>
-          <video autoplay muted loop width="25%">
-            <source src="static/videos/duck.mp4"
-            type="video/mp4">
-          </video>
-          <video autoplay muted loop width="25%">
-            <source src="static/videos/latern.mp4"
-            type="video/mp4">
-          </video>
+        
+        
+        <div class="container is-max-desktop has-text-centered">
+          <table>
+            <tr>
+              <td style="width: 25%">
+                <h2 class="title is-6">Input Image<br></h2>
+              </td>
+              <td style="width: 75%">
+                <h2 class="title is-6">Generated Scene Layouts with varying latents</h2>
+              </td>
+            </tr>
+            
+            <tr>
+              <td style="width: 25%">
+                <div class="columns is-centered">
+                  <div class="column content">
+                    <img src="./static/images/croissants.jpg">
+                  </div>
+                </div>
+              </td>
+              <td style="width: 75%">
+                <div>
+                  <video autoplay muted loop width="24%" style="padding-right:1%">
+                    <source src="./static/videos/croissant_16_1.mp4" type="video/mp4">
+                  </video>
+                  <video autoplay muted loop width="24%" style="padding-right:1%">
+                    <source src="./static/videos/croissant_16_2.mp4" type="video/mp4">
+                  </video>
+                  <video autoplay muted loop width="24%" style="padding-right:1%">
+                    <source src="./static/videos/croissant_16_3.mp4" type="video/mp4">
+                  </video>
+                </div>
+                
+              </td>
+            </tr>
+            
+            <tr>
+              <td style="width: 25%">
+                <div class="columns is-centered">
+                  <div class="column content">
+                    <img src="./static/images/cupcakes.jpg">
+                  </div>
+                </div>
+              </td>
+              <td style="width: 75%">
+                <div>
+                  <video autoplay muted loop width="25%">
+                    <source src="./static/videos/cupcake_12_1.mp4" type="video/mp4">
+                  </video>
+                  <video autoplay muted loop width="25%">
+                    <source src="./static/videos/cupcake_12_2.mp4" type="video/mp4">
+                  </video>
+                  <video autoplay muted loop width="25%">
+                    <source src="./static/videos/cupcake_12_3.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </td>
+            </tr>
 
-        </div>
-        <p>The scene is generated after learning from the single image input.</p>
-        <br><br>
+            <tr>
+              <td style="width: 25%">
+                <div class="columns is-centered">
+                  <div class="column content">
+                    <img src="./static/images/ducks.jpg">
+                  </div>
+                </div>
+              </td>
+              <td style="width: 75%">
+                <div>
+                  <video autoplay muted loop width="24%" style="padding-right:1%">
+                    <source src="./static/videos/duck_20_1.mp4" type="video/mp4">
+                  </video>
+                  <video autoplay muted loop width="24%" style="padding-right:1%">
+                    <source src="./static/videos/duck_20_2.mp4" type="video/mp4">
+                  </video>
+                  <video autoplay muted loop width="24%" style="padding-right:1%">
+                    <source src="./static/videos/duck_20_3.mp4" type="video/mp4">
+                  </video>
+                </div>                
+              </td>
+            </tr>
 
-        <h2 class="subtitle has-text-centered">
+            <tr>
+              <td style="width: 25%">
+                <div class="columns is-centered">
+                  <div class="column content">
+                    <img src="./static/images/lanterns.jpg">
+                  </div>
+                </div>
+              </td>
+              <td style="width: 75%">
+                <div>
+                  <video autoplay muted loop width="24%" style="padding-right:1%">
+                    <source src="./static/videos/lantern_33_1.mp4" type="video/mp4">
+                  </video>
+                  <video autoplay muted loop width="24%" style="padding-right:1%">
+                    <source src="./static/videos/lantern_33_2.mp4" type="video/mp4">
+                  </video>
+                  <video autoplay muted loop width="24%" style="padding-right:1%">
+                    <source src="./static/videos/lantern_33_3.mp4" type="video/mp4">
+                  </video>
+                </div>                
+              </td>
+            </tr>
+
+          </table>
+        
+        <!-- <h2 class="subtitle has-text-centered">
           <b>Diverse layout interpolation</b>:
         </h2>      
         <img src="./static/images/interpolation_labelled.png"
                  class="interpolation-image"
                  width="75%"
                  alt="layout interpolation results"/>
-        <p>Each image on the right is one generated sample</p>
+        <p>Each image on the right is one generated sample</p> -->
         <br><br>
 
-        <h2 class="subtitle has-text-centered">
-          <b>Reasonable layout extrapolation</b>:
+
+
+        <h2 class="title is-4">
+          <b>Extrapolation to varying number of instances</b>:
         </h2>      
         <img src="./static/images/extrapolation_labelled.png"
                  class="interpolation-image"
