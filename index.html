@@ -123,7 +123,8 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-      <p>Single input images:</p>
+      <h2 class="title is-6">
+      <p><b>Single input images</b>:</p>
       <div class="video-row">
         <img src="./static/images/croissants.jpg" width="24%" style="padding-left: 1%">
         <img src="./static/images/cupcakes.jpg" width="24%" style="padding-left: 1%">
@@ -131,7 +132,7 @@
         <img src="./static/images/lanterns.jpg" width="24%" style="padding-left: 1%">
       </div>
       
-      <p>Learned 3D layouts:</p>
+      <p><b>Learned 3D layouts</b>:</p>
       <div class="video-row">
         <video autoplay muted loop width="24%" style="padding-left: 1%">
           <source src="static/videos/croissant_16_1.mp4"
@@ -150,6 +151,27 @@
           type="video/mp4">
         </video>
       </div>
+
+      <p><b>Zero-shot Extrapolations</b>:</p>
+      <div class="video-row">
+        <video autoplay muted loop width="24%" style="padding-left: 1%">
+          <source src="static/videos/croissant_12.mp4"
+          type="video/mp4">
+        </video>
+        <video autoplay muted loop width="24%" style="padding-left: 1%">
+          <source src="static/videos/cupcake_8.mp4"
+          type="video/mp4">
+        </video>
+        <video autoplay muted loop width="24%" style="padding-left: 1%">
+          <source src="static/videos/duck_12_2.mp4"
+          type="video/mp4">
+        </video>
+        <video autoplay muted loop width="24%" style="padding-left: 1%">
+          <source src="static/videos/lantern_16.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+      </h2>
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">SinLayout</span>: uncovering spatial layout distribution from a single image
       </h2>
@@ -220,7 +242,7 @@
               <td style="width: 25%">
                 <div class="columns is-centered">
                   <div class="column content">
-                    <img src="./static/images/croissants.jpg">
+                    <img src="./static/images/croissants.jpg" width="85%">
                   </div>
                 </div>
               </td>
@@ -244,7 +266,7 @@
               <td style="width: 25%">
                 <div class="columns is-centered">
                   <div class="column content">
-                    <img src="./static/images/cupcakes.jpg">
+                    <img src="./static/images/cupcakes.jpg" width="85%">
                   </div>
                 </div>
               </td>
@@ -267,7 +289,7 @@
               <td style="width: 25%">
                 <div class="columns is-centered">
                   <div class="column content">
-                    <img src="./static/images/ducks.jpg">
+                    <img src="./static/images/ducks.jpg" width="85%">
                   </div>
                 </div>
               </td>
@@ -290,7 +312,7 @@
               <td style="width: 25%">
                 <div class="columns is-centered">
                   <div class="column content">
-                    <img src="./static/images/lanterns.jpg">
+                    <img src="./static/images/lanterns.jpg" width="85%">
                   </div>
                 </div>
               </td>
@@ -328,12 +350,12 @@
         </h2>      
         <img src="./static/images/extrapolation_labelled.png"
                  class="interpolation-image"
-                 width="75%"
+                 width="80%"
                  alt="layout extrapolation results"/>
         <p>The image marked with * are input images; others are generated images extrapolating on the number of instances while maintaining the layout patterns</p>
         <br><br>
 
-        <h2 class="subtitle has-text-centered">
+        <h2 class="title is-4">
           <b>Layout transfer to different instances</b>:
         </h2>      
         <img src="./static/images/layout_transfer.jpg"
